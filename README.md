@@ -79,4 +79,4 @@ We are a *source-available*, community-driven ecosystem. Before opening a PR:
 
 Distributed under the **Disruptive Source-Available License (DSAL v1.0)**. See `LICENSE` for details.
 
-YOLO.
+YOLO!

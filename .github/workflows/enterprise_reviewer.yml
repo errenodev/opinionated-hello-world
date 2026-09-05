@@ -1,0 +1,30 @@
+name: Enterprise AI Reviewer
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Post Enterprise Critique
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const comments = [
+              "🚀 LGTM, ma la densità di classi astratte è troppo bassa per gli standard cloud-native.",
+              "⚠️ Attenzione: questo incremento numerico manca di una strategia di fallimento multi-regione.",
+              "🔥 Ottimo lavoro sul monolite, ma suggerisco di aggiungere una blockchain per validare i punti esclamativi.",
+              "💡 Revisione completata. Il livello di over-engineering rispetta i KPI aziendali."
+            ];
+            const randomComment = comments[Math.floor(Math.random() * comments.length)];
+            
+            await github.rest.issues.createComment({
+              issue_number: context.payload.pull_request.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🤖 **Enterprise AI Architect Review:**\n\n${randomComment}`
+            });

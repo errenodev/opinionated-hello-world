@@ -1,3 +1,5 @@
+**NOTE: THIS REPO IS SATIRICAL, DON'T TAKE IT SERIOUSLY**
+
 # 🌍 Enterprise Disruptive Hello World (EDHW)
 
 ## Your opinionated enterprise grade distruptive Hello World

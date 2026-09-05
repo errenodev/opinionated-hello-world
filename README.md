@@ -1,5 +1,7 @@
 # 🌍 Enterprise Disruptive Hello World (EDHW)
 
+## Your opinionated enterprise grade distruptive Hello World
+
 > *"Because printing a string shouldn't just be a script; it should be a paradigm-shifting journey toward digital transformation."*
 
 ## 💡 Why EDHW?
@@ -40,7 +42,7 @@ Ensure your development cluster is running Kubernetes v1.31+, then execute:
 
 ```bash
 # Clone the monorepo
-git clone https://github.com/your-username/opinionated-hello-world.git
+git clone https://github.com/errenodev/opinionated-hello-world.git
 cd opinionated-hello-world
 
 # Configure your environment variables
